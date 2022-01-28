@@ -1,0 +1,68 @@
+#+Title: [SC1007] Data Structures and Algorithms
+#+Options: \n:t
+
+Contains the questions done for this module's assignments
+
+* Linked Lists
+  :PROPERTIES:
+  :CUSTOM_ID: linked-list
+  :END:
+
+** Q1: Reverse Nodes from A to B
+   Input: Start (Integer), End(Integer), singly linked list.
+   Write a function to reverse node of the linked list from start index to end index. If indices are out of range / invalid, linked list remains unchanged.
+   
+   Sample Input:
+   #+begin_src
+2 5
+1.1 1.2 1.3 1.4 1.5 1.6 1.7 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+1.10 1.20 1.60 1.50 1.40 1.30 1.70 
+   #+end_src
+
+** Q2: Tri-Partition
+   Input: Pivot (Integer), singly linked list
+   Move nodes with number less than the pivot to the front, followed by nodes with the same number, and nodes greater than the pivot.
+
+   Sample Input:
+   #+begin_src
+5
+8 1 5 5 5 7 2 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+1 2 5 5 5 8 7 
+   #+end_src
+
+** Q3: Reverse Every K Nodes
+   Input: K (integer), Singly linked list
+   Every K nodes form a segment. Reverse every segment in the linked list. If the last few nodes are less than K, ignore them.
+
+   Sample Input:
+   #+begin_src
+3
+1 2 3 4 5 6 7 8 9 10 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+3 2 1 6 5 4 9 8 7 10
+#+end_src
+
+** Q4: Rearrange Nodes
+   Input: Singly linked list
+   Given a linked list, split the list into two lists L, R (with the second list having one more node if length is odd). Rearrange the list such that R(0) -> L(0) -> R(1) -> .... Divide the resultant list the same manner and rearrange such that L(0) -> R(0) -> L(1) -> .... If length of list is odd, the last node remains at the last position.
+
+   Sample Input:
+   #+begin_src
+1 2 3 4 5 6 7 8 9 10 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+6 3 1 9 7 4 2 10 8 5 
+   #+end_src
