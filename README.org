@@ -1,9 +1,9 @@
 #+Title: [SC1007] Data Structures and Algorithms
 #+Options: \n:t
 
-Contains the questions done for this module's assignments
+Questions from SC1007 assignments
 
-* Linked Lists
+* Linked Lists (Week 3)
   :PROPERTIES:
   :CUSTOM_ID: linked-list
   :END:
@@ -65,4 +65,62 @@ Contains the questions done for this module's assignments
    Sample Output:
    #+begin_src
 6 3 1 9 7 4 2 10 8 5 
+   #+end_src
+
+* Stack & Queue (Week 4)
+  
+** Q5: Arithmetic Expression Queue
+   Input: Arithmetic Expression (String)
+   Given a character string of an integer arithmetic expression, write a function to split the operands, operators and parentheses into a queue.
+
+   Sample Input: 
+   #+begin_src
+1+15*121/(1311-84)
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+ 1  +  15  *  121  /  (  1311  -  84  ) 
+   #+end_src
+
+** Q6: Number of Visible Pairs
+   Input: Number of test cases, mountains (doubly circular linked list)
+   Given a doubly circular linked list with non-negative integers, where each integer represents the height of a mountain, find the number of mutually visible pairs.
+   The mountains A and B are mutually visible if
+   1. A and B are not the same mountain
+   2. A and B are adjacent
+   3. When A and B are not adjacent, \forall x \in {mountains between A and B (either clockwise or anticlockwise)}, height(x) <=  min(height(A), height(B))
+
+   Sample Input:
+   #+begin_src
+3
+1 2 3 4 5 a
+5 2 2 4 3 a
+5 4 4 4 3 2 1 5 1 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Current List: 5 4 3 2 1
+7 Pairs.
+Current List: 3 4 2 2 5
+8 Pairs.
+Current List: 1 5 1 2 3 4 4 4 5
+18 Pairs.
+
+   #+end_src
+
+   
+** Q7: Infix String to Prefix Expression
+   Input: Infix expression (String)
+   Convert an infix expression into a prefix expression stored in a linked list.
+
+   Sample Input:
+   #+begin_src
+99+(88-77)*(66/(55-44)+33)
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+99  *  -  88  77  +  /  66  -  55  44  33 
    #+end_src

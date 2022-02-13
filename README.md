@@ -1,21 +1,25 @@
 
 # Table of Contents
 
-1.  [Linked Lists](#linked-list)
-    1.  [Q1: Reverse Nodes from A to B](#org6cb834c)
-    2.  [Q2: Tri-Partition](#org0f18682)
-    3.  [Q3: Reverse Every K Nodes](#orgde98915)
-    4.  [Q4: Rearrange Nodes](#org1653e08)
+1.  [Linked Lists (Week 3)](#linked-list)
+    1.  [Q1: Reverse Nodes from A to B](#org0188ae2)
+    2.  [Q2: Tri-Partition](#orgb52c6b2)
+    3.  [Q3: Reverse Every K Nodes](#org3c7ca71)
+    4.  [Q4: Rearrange Nodes](#org3fe7da2)
+2.  [Stack & Queue (Week 4)](#orga1eedfb)
+    1.  [Q5: Arithmetic Expression Queue](#orgd7b0bd9)
+    2.  [Q6: Number of Visible Pairs](#org0212fb0)
+    3.  [Q7: Infix String to Prefix Expression](#org704f219)
 
-Contains the questions done for this module's assignments  
+Questions from SC1007 assignments  
 
 
 <a id="linked-list"></a>
 
-# Linked Lists
+# Linked Lists (Week 3)
 
 
-<a id="org6cb834c"></a>
+<a id="org0188ae2"></a>
 
 ## Q1: Reverse Nodes from A to B
 
@@ -32,7 +36,7 @@ Sample Output:
     1.10 1.20 1.60 1.50 1.40 1.30 1.70 
 
 
-<a id="org0f18682"></a>
+<a id="orgb52c6b2"></a>
 
 ## Q2: Tri-Partition
 
@@ -49,7 +53,7 @@ Sample Output:
     1 2 5 5 5 8 7 
 
 
-<a id="orgde98915"></a>
+<a id="org3c7ca71"></a>
 
 ## Q3: Reverse Every K Nodes
 
@@ -66,7 +70,7 @@ Sample Output:
     3 2 1 6 5 4 9 8 7 10
 
 
-<a id="org1653e08"></a>
+<a id="org3fe7da2"></a>
 
 ## Q4: Rearrange Nodes
 
@@ -80,4 +84,70 @@ Sample Input:
 Sample Output:  
 
     6 3 1 9 7 4 2 10 8 5 
+
+
+<a id="orga1eedfb"></a>
+
+# Stack & Queue (Week 4)
+
+
+<a id="orgd7b0bd9"></a>
+
+## Q5: Arithmetic Expression Queue
+
+Input: Arithmetic Expression (String)  
+Given a character string of an integer arithmetic expression, write a function to split the operands, operators and parentheses into a queue.  
+
+Sample Input:  
+
+    1+15*121/(1311-84)
+
+Sample Output:  
+
+    1  +  15  *  121  /  (  1311  -  84  ) 
+
+
+<a id="org0212fb0"></a>
+
+## Q6: Number of Visible Pairs
+
+Input: Number of test cases, mountains (doubly circular linked list)  
+Given a doubly circular linked list with non-negative integers, where each integer represents the height of a mountain, find the number of mutually visible pairs.  
+The mountains A and B are mutually visible if  
+
+1.  A and B are not the same mountain
+2.  A and B are adjacent
+3.  When A and B are not adjacent, &forall; x &isin; {mountains between A and B (either clockwise or anticlockwise)}, height(x) <=  min(height(A), height(B))
+
+Sample Input:  
+
+    3
+    1 2 3 4 5 a
+    5 2 2 4 3 a
+    5 4 4 4 3 2 1 5 1 a
+
+Sample Output:  
+
+    Current List: 5 4 3 2 1
+    7 Pairs.
+    Current List: 3 4 2 2 5
+    8 Pairs.
+    Current List: 1 5 1 2 3 4 4 4 5
+    18 Pairs.
+
+
+<a id="org704f219"></a>
+
+## Q7: Infix String to Prefix Expression
+
+Input: Infix expression (String)  
+Convert an infix expression into a prefix expression stored in a linked list.  
+
+Sample Input:  
+
+    99+(88-77)*(66/(55-44)+33)
+
+Sample Output:  
+
+    99  *  -  88  77  +  /  66  -  55  44  33 
 
