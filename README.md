@@ -2,14 +2,21 @@
 # Table of Contents
 
 1.  [Linked Lists (Week 3)](#linked-list)
-    1.  [Q1: Reverse Nodes from A to B](#org0188ae2)
-    2.  [Q2: Tri-Partition](#orgb52c6b2)
-    3.  [Q3: Reverse Every K Nodes](#org3c7ca71)
-    4.  [Q4: Rearrange Nodes](#org3fe7da2)
-2.  [Stack & Queue (Week 4)](#orga1eedfb)
-    1.  [Q5: Arithmetic Expression Queue](#orgd7b0bd9)
-    2.  [Q6: Number of Visible Pairs](#org0212fb0)
-    3.  [Q7: Infix String to Prefix Expression](#org704f219)
+    1.  [Q1: Reverse Nodes from A to B](#org86d93a3)
+    2.  [Q2: Tri-Partition](#org363fb50)
+    3.  [Q3: Reverse Every K Nodes](#org7c5697f)
+    4.  [Q4: Rearrange Nodes](#org6c813a4)
+2.  [Stack & Queue (Week 4)](#stack-queue)
+    1.  [Q5: Arithmetic Expression Queue](#org30f9d16)
+    2.  [Q6: Number of Visible Pairs](#org0e9ca3f)
+    3.  [Q7: Infix String to Prefix Expression](#org6b3b768)
+3.  [Binary Trees (Week 5)](#binary-trees)
+    1.  [Q6: Expression Trees](#orgd13dad8)
+    2.  [Q7: The Moving Cost from A to B in a Binary Tree](#orgc7350e3)
+    3.  [Q8: Construct A Binary Tree](#orgf29d656)
+4.  [Binary Search Trees (Week 6)](#org57b70aa)
+    1.  [Q1: Finding Largest Binary Search Subtree](#org7b0ca3a)
+    2.  [Q2: Correction of Binary Search Tree](#org0924164)
 
 Questions from SC1007 assignments  
 
@@ -19,7 +26,7 @@ Questions from SC1007 assignments
 # Linked Lists (Week 3)
 
 
-<a id="org0188ae2"></a>
+<a id="org86d93a3"></a>
 
 ## Q1: Reverse Nodes from A to B
 
@@ -36,7 +43,7 @@ Sample Output:
     1.10 1.20 1.60 1.50 1.40 1.30 1.70 
 
 
-<a id="orgb52c6b2"></a>
+<a id="org363fb50"></a>
 
 ## Q2: Tri-Partition
 
@@ -53,7 +60,7 @@ Sample Output:
     1 2 5 5 5 8 7 
 
 
-<a id="org3c7ca71"></a>
+<a id="org7c5697f"></a>
 
 ## Q3: Reverse Every K Nodes
 
@@ -70,7 +77,7 @@ Sample Output:
     3 2 1 6 5 4 9 8 7 10
 
 
-<a id="org3fe7da2"></a>
+<a id="org6c813a4"></a>
 
 ## Q4: Rearrange Nodes
 
@@ -86,12 +93,12 @@ Sample Output:
     6 3 1 9 7 4 2 10 8 5 
 
 
-<a id="orga1eedfb"></a>
+<a id="stack-queue"></a>
 
 # Stack & Queue (Week 4)
 
 
-<a id="orgd7b0bd9"></a>
+<a id="org30f9d16"></a>
 
 ## Q5: Arithmetic Expression Queue
 
@@ -107,7 +114,7 @@ Sample Output:
     1  +  15  *  121  /  (  1311  -  84  ) 
 
 
-<a id="org0212fb0"></a>
+<a id="org0e9ca3f"></a>
 
 ## Q6: Number of Visible Pairs
 
@@ -136,7 +143,7 @@ Sample Output:
     18 Pairs.
 
 
-<a id="org704f219"></a>
+<a id="org6b3b768"></a>
 
 ## Q7: Infix String to Prefix Expression
 
@@ -150,4 +157,147 @@ Sample Input:
 Sample Output:  
 
     99  *  -  88  77  +  /  66  -  55  44  33 
+
+
+<a id="binary-trees"></a>
+
+# Binary Trees (Week 5)
+
+
+<a id="orgd13dad8"></a>
+
+## Q6: Expression Trees
+
+Input: Prefix Expression (String)  
+Create an expression tree structure using a prefix expression. Write two functions to print the tree nodes by in-order and post-order traversal to print the infix and postfix expression respectively. Write an expession evaluation function to calculate the given arithmetic expression.  
+
+Sample Input:  
+
+    +  99  *  -  88  77  +  /  66  -  55  44  33 
+
+Sample Output:  
+
+    99 + 88 - 77 * 66 / 55 - 44 + 33 
+    99 88 77 - 66 55 44 - / 33 + * + 
+    528.00
+
+
+<a id="orgc7350e3"></a>
+
+## Q7: The Moving Cost from A to B in a Binary Tree
+
+Input: Binary Tree with Weighted Nodes  
+In a given binary tree, each node represents a toll gate, which value indicates a unique non-negative toll fee. To move from one node to another, the total cost is the toll fees for every gate that is passed. Calculate the mininmum of the total cost.  
+
+Sample Input: (a represents an edge, @ represents no edge)  
+
+    1 a a
+    2 a a
+    3 a @
+    4 a a
+    7 @ @
+    8 a @
+    5 @ @
+    6 @ @
+    9 @ @
+    5 7
+
+Sample Output:  
+
+    1
+    |---2
+    |	|---4
+    |	|	|---5
+    |	|	|___6
+    |	|___7
+    |___3
+    |	|---8
+    |	|	|---9
+    Distance is 18
+
+
+<a id="orgf29d656"></a>
+
+## Q8: Construct A Binary Tree
+
+Input: Pre-order traversal String, Post-order traversal String  
+Given a valid preorder and postorder traversal strings, write a function to reconstruct the binary tree. (If a node only has one child, the child must be the left child)  
+
+Sample Input:  
+
+    124567389ABC
+    56472BCA9831
+
+Sample Output:  
+
+    124567389ABC
+    56472BCA9831
+    546271BAC983
+
+
+<a id="org57b70aa"></a>
+
+# Binary Search Trees (Week 6)
+
+
+<a id="org7b0ca3a"></a>
+
+## Q1: Finding Largest Binary Search Subtree
+
+Input: Binary Tree (level-by-level traversal string)  
+Write a function to find the largest binary search subtree from a given binary tree.  
+
+Sample Input:  
+
+    70 35 79 15 50 -1 99 18 -1 40 60 a
+
+Sample Output:  
+
+    Enter a list of numbers for a Binary Tree, terminated by any non-digit character: 
+    The input binary tree:
+    70
+    |---35
+    |	|---15
+    |	|	|---18
+    |	|___50
+    |	|	|---40
+    |	|	|___60
+    |___79
+    |	|___99
+    
+    The largest binary search subtree:
+    50
+    |---40
+    |___60
+
+
+<a id="org0924164"></a>
+
+## Q2: Correction of Binary Search Tree
+
+Input: Binary Search Tree (level-by-level traversal string)  
+For a given binary search tree, the data of two nodes are swapped. Find the two error nodes in the binary search tree and swap the values.  
+
+Sample Input:  
+
+    4 2 6 1 -1 -1 7 -1 0 a
+
+Sample Output:  
+
+    Enter a list of numbers for a Binary Tree, terminated by any non-digit character: 
+    The input binary search tree:
+    4
+    |---2
+    |	|---1
+    |	|	|___0
+    |___6
+    |	|___7
+    
+    The corrected binary search tree:
+    4
+    |---2
+    |	|---0
+    |	|	|___1
+    |___6
+    |	|___7
 

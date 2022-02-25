@@ -68,6 +68,9 @@ Questions from SC1007 assignments
    #+end_src
 
 * Stack & Queue (Week 4)
+  :PROPERTIES:
+  :CUSTOM_ID: stack-queue
+  :END:
   
 ** Q5: Arithmetic Expression Queue
    Input: Arithmetic Expression (String)
@@ -124,3 +127,135 @@ Current List: 1 5 1 2 3 4 4 4 5
    #+begin_src
 99  *  -  88  77  +  /  66  -  55  44  33 
    #+end_src
+
+* Binary Trees (Week 5)
+  :PROPERTIES:
+  :CUSTOM_ID: binary-trees
+  :END:
+  
+** Q6: Expression Trees
+   Input: Prefix Expression (String)
+   Create an expression tree structure using a prefix expression. Write two functions to print the tree nodes by in-order and post-order traversal to print the infix and postfix expression respectively. Write an expession evaluation function to calculate the given arithmetic expression.
+
+   Sample Input:
+   #+begin_src
+ +  99  *  -  88  77  +  /  66  -  55  44  33 
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+99 + 88 - 77 * 66 / 55 - 44 + 33 
+99 88 77 - 66 55 44 - / 33 + * + 
+528.00
+   #+end_src
+
+** Q7: The Moving Cost from A to B in a Binary Tree
+   Input: Binary Tree with Weighted Nodes
+   In a given binary tree, each node represents a toll gate, which value indicates a unique non-negative toll fee. To move from one node to another, the total cost is the toll fees for every gate that is passed. Calculate the mininmum of the total cost.
+
+   Sample Input: (a represents an edge, @ represents no edge)
+   #+begin_src
+1 a a
+2 a a
+3 a @
+4 a a
+7 @ @
+8 a @
+5 @ @
+6 @ @
+9 @ @
+5 7
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+1
+|---2
+|	|---4
+|	|	|---5
+|	|	|___6
+|	|___7
+|___3
+|	|---8
+|	|	|---9
+Distance is 18
+   #+end_src
+   
+** Q8: Construct A Binary Tree
+   Input: Pre-order traversal String, Post-order traversal String
+   Given a valid preorder and postorder traversal strings, write a function to reconstruct the binary tree. (If a node only has one child, the child must be the left child)
+
+   Sample Input:
+   #+begin_src
+124567389ABC
+56472BCA9831
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+124567389ABC
+56472BCA9831
+546271BAC983
+   #+end_src
+
+* Binary Search Trees (Week 6)
+  
+** Q1: Finding Largest Binary Search Subtree
+   Input: Binary Tree (level-by-level traversal string)
+   Write a function to find the largest binary search subtree from a given binary tree. 
+
+   Sample Input:
+   #+begin_src
+70 35 79 15 50 -1 99 18 -1 40 60 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter a list of numbers for a Binary Tree, terminated by any non-digit character: 
+The input binary tree:
+70
+|---35
+|	|---15
+|	|	|---18
+|	|___50
+|	|	|---40
+|	|	|___60
+|___79
+|	|___99
+
+The largest binary search subtree:
+50
+|---40
+|___60
+   #+end_src
+
+** Q2: Correction of Binary Search Tree
+   Input: Binary Search Tree (level-by-level traversal string)
+   For a given binary search tree, the data of two nodes are swapped. Find the two error nodes in the binary search tree and swap the values.
+
+   Sample Input:
+   #+begin_src
+4 2 6 1 -1 -1 7 -1 0 a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter a list of numbers for a Binary Tree, terminated by any non-digit character: 
+The input binary search tree:
+4
+|---2
+|	|---1
+|	|	|___0
+|___6
+|	|___7
+
+The corrected binary search tree:
+4
+|---2
+|	|---0
+|	|	|___1
+|___6
+|	|___7
+   #+end_src
+
+   
