@@ -259,3 +259,275 @@ The corrected binary search tree:
    #+end_src
 
    
+* Hash Table and Graph (Week 3)
+  :PROPERTIES:
+  :CUSTOM_ID: hash-table
+  :END:
+  
+** Q6: Degree of a Vertex
+   Write a function to compute vertex degrees using adjacency matrix
+
+   Sample Input:
+   #+begin_src
+7
+1 2
+1 3
+2 3
+2 4
+4 1
+4 3
+4 6
+5 3
+5 7
+6 1
+6 3
+7 4
+7 5
+a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of vertices:
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Print graph matrix 
+0	1	1	1	0	1	0	
+1	0	1	1	0	0	0	
+1	1	0	1	1	1	0	
+1	1	1	0	0	1	1	
+0	0	1	0	0	0	1	
+1	0	1	1	0	0	0	
+0	0	0	1	1	0	0	
+
+Print vertex's degree 
+1: 4 degree
+2: 3 degree
+3: 5 degree
+4: 5 degree
+5: 2 degree
+6: 3 degree
+7: 2 degree
+   #+end_src
+   
+** Q7: Adjacency List to Adjacency Matrix
+   Write a function to convert an adjacency list to an adjacency matrix
+
+   Sample Input:
+   #+begin_src
+7
+1 2
+1 3
+2 3
+2 4
+4 1
+4 3
+4 6
+5 3
+5 7
+6 1
+6 3
+7 4
+7 5
+a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of vertices:
+Enter two vertices which are adjacent to each other (enter a to stop):
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Enter two vertices which are adjacent to each other: (enter a to stop)
+Adjacency matrix:
+0	1	1	1	0	1	0	
+1	0	1	1	0	0	0	
+1	1	0	1	1	1	0	
+1	1	1	0	0	1	1	
+0	0	1	0	0	0	1	
+1	0	1	1	0	0	0	
+0	0	0	1	1	0	0
+   #+end_src
+   
+** Q8: Hash Table - Delete a Key
+   Implement the function of key deletion in a closed addressing hash table with a modulo hash function. Return 1 if the deletion is successful, 0 if not.
+
+   Sample Input:
+   #+begin_src
+1
+3
+2
+1
+2
+2
+2
+3
+2
+4
+2
+5
+2
+6
+2
+7
+2
+8
+2
+9
+3
+5
+4
+5
+3
+5
+3
+4
+3
+6
+6
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+============= Hash Table ============
+|1. Create a hash table             |
+|2. Insert a key to the hash table  |
+|3. Search a key in the hash table  |
+|4. Delete a key in the hash table  |
+|5. Print the hash table            |
+|6. Quit                            |
+=====================================
+Enter selection: Enter the size of hash table:
+HashTable is created.
+Enter selection: Enter a key to be inserted:
+1 is inserted.
+Enter selection: Enter a key to be inserted:
+2 is inserted.
+Enter selection: Enter a key to be inserted:
+3 is inserted.
+Enter selection: Enter a key to be inserted:
+4 is inserted.
+Enter selection: Enter a key to be inserted:
+5 is inserted.
+Enter selection: Enter a key to be inserted:
+6 is inserted.
+Enter selection: Enter a key to be inserted:
+7 is inserted.
+Enter selection: Enter a key to be inserted:
+8 is inserted.
+Enter selection: Enter a key to be inserted:
+9 is inserted.
+Enter selection: Enter a key for searching in the HashTable:
+5 is found.
+Enter selection: Enter a key to be deleted:
+5 is deleted.
+Enter selection: Enter a key for searching in the HashTable:
+5 is not found.
+Enter selection: Enter a key for searching in the HashTable:
+4 is found.
+Enter selection: Enter a key for searching in the HashTable:
+6 is found.
+Enter selection:
+   #+end_src
+
+* BFS & DFS
+  
+** Q6: Undirected Graph Connection
+   Using DFS, determine if an undirected graph is connected. Assume input graph has no duplicate edges or invalid links
+
+   Sample Input:
+   #+begin_src
+5
+1 2
+1 3
+4 5
+a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of vertices:
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+The graph is not connected.
+   #+end_src
+
+** Q7: Shortest Distance
+   Using BFS, write a function to find the shortest distance from $v$ to $w$ in an undirected graph. If there is no path from $v$ to $w$, return -1. Assume input graph has no duplicate edges or invalid links
+
+   Sample Input:
+   #+begin_src
+5
+1 2
+1 4
+2 3
+3 4
+4 5
+a
+1 5
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of vertices:
+Enter two vertices which are adjacent to each other:
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices which are adjacent to each other: (press a to stop)
+Enter two vertices for finding their shortest distance: (press a to stop)
+The shortest distance is 2
+   #+end_src
+
+** Q8: Directed Graph Connection
+   Using DFS, determine if a directed graph is strongly connected. Assume input graph has no duplicate edges or invalid links
+
+   Sample Input:
+   #+begin_src
+5
+1 2
+1 4
+2 3
+3 4
+4 1
+4 5
+a
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of vertices:
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+Enter a directed edge: (press a to stop)
+The graph is not strongly connected.
+   #+end_src

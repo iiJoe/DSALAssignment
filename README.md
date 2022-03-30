@@ -2,21 +2,29 @@
 # Table of Contents
 
 1.  [Linked Lists (Week 3)](#linked-list)
-    1.  [Q1: Reverse Nodes from A to B](#org86d93a3)
-    2.  [Q2: Tri-Partition](#org363fb50)
-    3.  [Q3: Reverse Every K Nodes](#org7c5697f)
-    4.  [Q4: Rearrange Nodes](#org6c813a4)
+    1.  [Q1: Reverse Nodes from A to B](#org6b54393)
+    2.  [Q2: Tri-Partition](#orgcfe48ed)
+    3.  [Q3: Reverse Every K Nodes](#org0310d80)
+    4.  [Q4: Rearrange Nodes](#org00626be)
 2.  [Stack & Queue (Week 4)](#stack-queue)
-    1.  [Q5: Arithmetic Expression Queue](#org30f9d16)
-    2.  [Q6: Number of Visible Pairs](#org0e9ca3f)
-    3.  [Q7: Infix String to Prefix Expression](#org6b3b768)
+    1.  [Q5: Arithmetic Expression Queue](#org7580ce8)
+    2.  [Q6: Number of Visible Pairs](#org3c47054)
+    3.  [Q7: Infix String to Prefix Expression](#org73d5e4e)
 3.  [Binary Trees (Week 5)](#binary-trees)
-    1.  [Q6: Expression Trees](#orgd13dad8)
-    2.  [Q7: The Moving Cost from A to B in a Binary Tree](#orgc7350e3)
-    3.  [Q8: Construct A Binary Tree](#orgf29d656)
-4.  [Binary Search Trees (Week 6)](#org57b70aa)
-    1.  [Q1: Finding Largest Binary Search Subtree](#org7b0ca3a)
-    2.  [Q2: Correction of Binary Search Tree](#org0924164)
+    1.  [Q6: Expression Trees](#org74c3da4)
+    2.  [Q7: The Moving Cost from A to B in a Binary Tree](#orge3091ec)
+    3.  [Q8: Construct A Binary Tree](#org0cf2b74)
+4.  [Binary Search Trees (Week 6)](#org10965da)
+    1.  [Q1: Finding Largest Binary Search Subtree](#org65b3504)
+    2.  [Q2: Correction of Binary Search Tree](#org28f093c)
+5.  [Hash Table and Graph (Week 3)](#hash-table)
+    1.  [Q6: Degree of a Vertex](#orgb69134e)
+    2.  [Q7: Adjacency List to Adjacency Matrix](#org20ff3b8)
+    3.  [Q8: Hash Table - Delete a Key](#org4f59880)
+6.  [BFS & DFS](#orga428528)
+    1.  [Q6: Undirected Graph Connection](#org974c665)
+    2.  [Q7: Shortest Distance](#org96a467b)
+    3.  [Q8: Directed Graph Connection](#orgb395b4b)
 
 Questions from SC1007 assignments  
 
@@ -26,7 +34,7 @@ Questions from SC1007 assignments
 # Linked Lists (Week 3)
 
 
-<a id="org86d93a3"></a>
+<a id="org6b54393"></a>
 
 ## Q1: Reverse Nodes from A to B
 
@@ -43,7 +51,7 @@ Sample Output:
     1.10 1.20 1.60 1.50 1.40 1.30 1.70 
 
 
-<a id="org363fb50"></a>
+<a id="orgcfe48ed"></a>
 
 ## Q2: Tri-Partition
 
@@ -60,7 +68,7 @@ Sample Output:
     1 2 5 5 5 8 7 
 
 
-<a id="org7c5697f"></a>
+<a id="org0310d80"></a>
 
 ## Q3: Reverse Every K Nodes
 
@@ -77,7 +85,7 @@ Sample Output:
     3 2 1 6 5 4 9 8 7 10
 
 
-<a id="org6c813a4"></a>
+<a id="org00626be"></a>
 
 ## Q4: Rearrange Nodes
 
@@ -98,7 +106,7 @@ Sample Output:
 # Stack & Queue (Week 4)
 
 
-<a id="org30f9d16"></a>
+<a id="org7580ce8"></a>
 
 ## Q5: Arithmetic Expression Queue
 
@@ -114,7 +122,7 @@ Sample Output:
     1  +  15  *  121  /  (  1311  -  84  ) 
 
 
-<a id="org0e9ca3f"></a>
+<a id="org3c47054"></a>
 
 ## Q6: Number of Visible Pairs
 
@@ -143,7 +151,7 @@ Sample Output:
     18 Pairs.
 
 
-<a id="org6b3b768"></a>
+<a id="org73d5e4e"></a>
 
 ## Q7: Infix String to Prefix Expression
 
@@ -164,7 +172,7 @@ Sample Output:
 # Binary Trees (Week 5)
 
 
-<a id="orgd13dad8"></a>
+<a id="org74c3da4"></a>
 
 ## Q6: Expression Trees
 
@@ -182,7 +190,7 @@ Sample Output:
     528.00
 
 
-<a id="orgc7350e3"></a>
+<a id="orge3091ec"></a>
 
 ## Q7: The Moving Cost from A to B in a Binary Tree
 
@@ -216,7 +224,7 @@ Sample Output:
     Distance is 18
 
 
-<a id="orgf29d656"></a>
+<a id="org0cf2b74"></a>
 
 ## Q8: Construct A Binary Tree
 
@@ -235,12 +243,12 @@ Sample Output:
     546271BAC983
 
 
-<a id="org57b70aa"></a>
+<a id="org10965da"></a>
 
 # Binary Search Trees (Week 6)
 
 
-<a id="org7b0ca3a"></a>
+<a id="org65b3504"></a>
 
 ## Q1: Finding Largest Binary Search Subtree
 
@@ -271,7 +279,7 @@ Sample Output:
     |___60
 
 
-<a id="org0924164"></a>
+<a id="org28f093c"></a>
 
 ## Q2: Correction of Binary Search Tree
 
@@ -300,4 +308,292 @@ Sample Output:
     |	|	|___1
     |___6
     |	|___7
+
+
+<a id="hash-table"></a>
+
+# Hash Table and Graph (Week 3)
+
+
+<a id="orgb69134e"></a>
+
+## Q6: Degree of a Vertex
+
+Write a function to compute vertex degrees using adjacency matrix  
+
+Sample Input:  
+
+    7
+    1 2
+    1 3
+    2 3
+    2 4
+    4 1
+    4 3
+    4 6
+    5 3
+    5 7
+    6 1
+    6 3
+    7 4
+    7 5
+    a
+
+Sample Output:  
+
+    Enter the number of vertices:
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Print graph matrix 
+    0	1	1	1	0	1	0	
+    1	0	1	1	0	0	0	
+    1	1	0	1	1	1	0	
+    1	1	1	0	0	1	1	
+    0	0	1	0	0	0	1	
+    1	0	1	1	0	0	0	
+    0	0	0	1	1	0	0	
+    
+    Print vertex's degree 
+    1: 4 degree
+    2: 3 degree
+    3: 5 degree
+    4: 5 degree
+    5: 2 degree
+    6: 3 degree
+    7: 2 degree
+
+
+<a id="org20ff3b8"></a>
+
+## Q7: Adjacency List to Adjacency Matrix
+
+Write a function to convert an adjacency list to an adjacency matrix  
+
+Sample Input:  
+
+    7
+    1 2
+    1 3
+    2 3
+    2 4
+    4 1
+    4 3
+    4 6
+    5 3
+    5 7
+    6 1
+    6 3
+    7 4
+    7 5
+    a
+
+Sample Output:  
+
+    Enter the number of vertices:
+    Enter two vertices which are adjacent to each other (enter a to stop):
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Enter two vertices which are adjacent to each other: (enter a to stop)
+    Adjacency matrix:
+    0	1	1	1	0	1	0	
+    1	0	1	1	0	0	0	
+    1	1	0	1	1	1	0	
+    1	1	1	0	0	1	1	
+    0	0	1	0	0	0	1	
+    1	0	1	1	0	0	0	
+    0	0	0	1	1	0	0
+
+
+<a id="org4f59880"></a>
+
+## Q8: Hash Table - Delete a Key
+
+Implement the function of key deletion in a closed addressing hash table with a modulo hash function. Return 1 if the deletion is successful, 0 if not.  
+
+Sample Input:  
+
+    1
+    3
+    2
+    1
+    2
+    2
+    2
+    3
+    2
+    4
+    2
+    5
+    2
+    6
+    2
+    7
+    2
+    8
+    2
+    9
+    3
+    5
+    4
+    5
+    3
+    5
+    3
+    4
+    3
+    6
+    6
+
+Sample Output:  
+
+    ============= Hash Table ============
+    |1. Create a hash table             |
+    |2. Insert a key to the hash table  |
+    |3. Search a key in the hash table  |
+    |4. Delete a key in the hash table  |
+    |5. Print the hash table            |
+    |6. Quit                            |
+    =====================================
+    Enter selection: Enter the size of hash table:
+    HashTable is created.
+    Enter selection: Enter a key to be inserted:
+    1 is inserted.
+    Enter selection: Enter a key to be inserted:
+    2 is inserted.
+    Enter selection: Enter a key to be inserted:
+    3 is inserted.
+    Enter selection: Enter a key to be inserted:
+    4 is inserted.
+    Enter selection: Enter a key to be inserted:
+    5 is inserted.
+    Enter selection: Enter a key to be inserted:
+    6 is inserted.
+    Enter selection: Enter a key to be inserted:
+    7 is inserted.
+    Enter selection: Enter a key to be inserted:
+    8 is inserted.
+    Enter selection: Enter a key to be inserted:
+    9 is inserted.
+    Enter selection: Enter a key for searching in the HashTable:
+    5 is found.
+    Enter selection: Enter a key to be deleted:
+    5 is deleted.
+    Enter selection: Enter a key for searching in the HashTable:
+    5 is not found.
+    Enter selection: Enter a key for searching in the HashTable:
+    4 is found.
+    Enter selection: Enter a key for searching in the HashTable:
+    6 is found.
+    Enter selection:
+
+
+<a id="orga428528"></a>
+
+# BFS & DFS
+
+
+<a id="org974c665"></a>
+
+## Q6: Undirected Graph Connection
+
+Using DFS, determine if an undirected graph is connected. Assume input graph has no duplicate edges or invalid links  
+
+Sample Input:  
+
+    5
+    1 2
+    1 3
+    4 5
+    a
+
+Sample Output:  
+
+    Enter the number of vertices:
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    The graph is not connected.
+
+
+<a id="org96a467b"></a>
+
+## Q7: Shortest Distance
+
+Using BFS, write a function to find the shortest distance from \(v\) to \(w\) in an undirected graph. If there is no path from \(v\) to \(w\), return -1. Assume input graph has no duplicate edges or invalid links  
+
+Sample Input:  
+
+    5
+    1 2
+    1 4
+    2 3
+    3 4
+    4 5
+    a
+    1 5
+
+Sample Output:  
+
+    Enter the number of vertices:
+    Enter two vertices which are adjacent to each other:
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices which are adjacent to each other: (press a to stop)
+    Enter two vertices for finding their shortest distance: (press a to stop)
+    The shortest distance is 2
+
+
+<a id="orgb395b4b"></a>
+
+## Q8: Directed Graph Connection
+
+Using DFS, determine if a directed graph is strongly connected. Assume input graph has no duplicate edges or invalid links  
+
+Sample Input:  
+
+    5
+    1 2
+    1 4
+    2 3
+    3 4
+    4 1
+    4 5
+    a
+
+Sample Output:  
+
+    Enter the number of vertices:
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    Enter a directed edge: (press a to stop)
+    The graph is not strongly connected.
 
