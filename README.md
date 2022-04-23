@@ -2,29 +2,33 @@
 # Table of Contents
 
 1.  [Linked Lists (Week 3)](#linked-list)
-    1.  [Q1: Reverse Nodes from A to B](#org6b54393)
-    2.  [Q2: Tri-Partition](#orgcfe48ed)
-    3.  [Q3: Reverse Every K Nodes](#org0310d80)
-    4.  [Q4: Rearrange Nodes](#org00626be)
+    1.  [Q1: Reverse Nodes from A to B](#org57cc1ba)
+    2.  [Q2: Tri-Partition](#org90f1502)
+    3.  [Q3: Reverse Every K Nodes](#orgc460025)
+    4.  [Q4: Rearrange Nodes](#orgd876150)
 2.  [Stack & Queue (Week 4)](#stack-queue)
-    1.  [Q5: Arithmetic Expression Queue](#org7580ce8)
-    2.  [Q6: Number of Visible Pairs](#org3c47054)
-    3.  [Q7: Infix String to Prefix Expression](#org73d5e4e)
+    1.  [Q5: Arithmetic Expression Queue](#org85d9e4f)
+    2.  [Q6: Number of Visible Pairs](#orga48952a)
+    3.  [Q7: Infix String to Prefix Expression](#org9e44c0a)
 3.  [Binary Trees (Week 5)](#binary-trees)
-    1.  [Q6: Expression Trees](#org74c3da4)
-    2.  [Q7: The Moving Cost from A to B in a Binary Tree](#orge3091ec)
-    3.  [Q8: Construct A Binary Tree](#org0cf2b74)
-4.  [Binary Search Trees (Week 6)](#org10965da)
-    1.  [Q1: Finding Largest Binary Search Subtree](#org65b3504)
-    2.  [Q2: Correction of Binary Search Tree](#org28f093c)
-5.  [Hash Table and Graph (Week 3)](#hash-table)
-    1.  [Q6: Degree of a Vertex](#orgb69134e)
-    2.  [Q7: Adjacency List to Adjacency Matrix](#org20ff3b8)
-    3.  [Q8: Hash Table - Delete a Key](#org4f59880)
-6.  [BFS & DFS](#orga428528)
-    1.  [Q6: Undirected Graph Connection](#org974c665)
-    2.  [Q7: Shortest Distance](#org96a467b)
-    3.  [Q8: Directed Graph Connection](#orgb395b4b)
+    1.  [Q6: Expression Trees](#org03347b4)
+    2.  [Q7: The Moving Cost from A to B in a Binary Tree](#orgea72ef8)
+    3.  [Q8: Construct A Binary Tree](#org1d1e6ca)
+4.  [Binary Search Trees (Week 6)](#org98ffeff)
+    1.  [Q1: Finding Largest Binary Search Subtree](#orgba47d33)
+    2.  [Q2: Correction of Binary Search Tree](#orgcd12d59)
+5.  [Hash Table and Graph (Week 9)](#hash-table)
+    1.  [Q6: Degree of a Vertex](#org8c05fbc)
+    2.  [Q7: Adjacency List to Adjacency Matrix](#orgb40bf57)
+    3.  [Q8: Hash Table - Delete a Key](#orgd9e852c)
+6.  [BFS & DFS (Week 10)](#orgeae5b4d)
+    1.  [Q6: Undirected Graph Connection](#org969f85a)
+    2.  [Q7: Shortest Distance](#org06a0e3d)
+    3.  [Q8: Directed Graph Connection](#org413c375)
+7.  [Backtracking and DP (Week 12)](#org68ebf28)
+    1.  [Q6: Linear Recurrence](#org5c71cbf)
+    2.  [Q7: Knapsack](#orgde8d635)
+    3.  [Q8: Coloring Regions](#orgc959538)
 
 Questions from SC1007 assignments  
 
@@ -34,7 +38,7 @@ Questions from SC1007 assignments
 # Linked Lists (Week 3)
 
 
-<a id="org6b54393"></a>
+<a id="org57cc1ba"></a>
 
 ## Q1: Reverse Nodes from A to B
 
@@ -51,7 +55,7 @@ Sample Output:
     1.10 1.20 1.60 1.50 1.40 1.30 1.70 
 
 
-<a id="orgcfe48ed"></a>
+<a id="org90f1502"></a>
 
 ## Q2: Tri-Partition
 
@@ -68,7 +72,7 @@ Sample Output:
     1 2 5 5 5 8 7 
 
 
-<a id="org0310d80"></a>
+<a id="orgc460025"></a>
 
 ## Q3: Reverse Every K Nodes
 
@@ -85,7 +89,7 @@ Sample Output:
     3 2 1 6 5 4 9 8 7 10
 
 
-<a id="org00626be"></a>
+<a id="orgd876150"></a>
 
 ## Q4: Rearrange Nodes
 
@@ -106,7 +110,7 @@ Sample Output:
 # Stack & Queue (Week 4)
 
 
-<a id="org7580ce8"></a>
+<a id="org85d9e4f"></a>
 
 ## Q5: Arithmetic Expression Queue
 
@@ -122,7 +126,7 @@ Sample Output:
     1  +  15  *  121  /  (  1311  -  84  ) 
 
 
-<a id="org3c47054"></a>
+<a id="orga48952a"></a>
 
 ## Q6: Number of Visible Pairs
 
@@ -151,7 +155,7 @@ Sample Output:
     18 Pairs.
 
 
-<a id="org73d5e4e"></a>
+<a id="org9e44c0a"></a>
 
 ## Q7: Infix String to Prefix Expression
 
@@ -172,7 +176,7 @@ Sample Output:
 # Binary Trees (Week 5)
 
 
-<a id="org74c3da4"></a>
+<a id="org03347b4"></a>
 
 ## Q6: Expression Trees
 
@@ -190,7 +194,7 @@ Sample Output:
     528.00
 
 
-<a id="orge3091ec"></a>
+<a id="orgea72ef8"></a>
 
 ## Q7: The Moving Cost from A to B in a Binary Tree
 
@@ -224,7 +228,7 @@ Sample Output:
     Distance is 18
 
 
-<a id="org0cf2b74"></a>
+<a id="org1d1e6ca"></a>
 
 ## Q8: Construct A Binary Tree
 
@@ -243,12 +247,12 @@ Sample Output:
     546271BAC983
 
 
-<a id="org10965da"></a>
+<a id="org98ffeff"></a>
 
 # Binary Search Trees (Week 6)
 
 
-<a id="org65b3504"></a>
+<a id="orgba47d33"></a>
 
 ## Q1: Finding Largest Binary Search Subtree
 
@@ -279,7 +283,7 @@ Sample Output:
     |___60
 
 
-<a id="org28f093c"></a>
+<a id="orgcd12d59"></a>
 
 ## Q2: Correction of Binary Search Tree
 
@@ -312,10 +316,10 @@ Sample Output:
 
 <a id="hash-table"></a>
 
-# Hash Table and Graph (Week 3)
+# Hash Table and Graph (Week 9)
 
 
-<a id="orgb69134e"></a>
+<a id="org8c05fbc"></a>
 
 ## Q6: Degree of a Vertex
 
@@ -375,7 +379,7 @@ Sample Output:
     7: 2 degree
 
 
-<a id="org20ff3b8"></a>
+<a id="orgb40bf57"></a>
 
 ## Q7: Adjacency List to Adjacency Matrix
 
@@ -426,7 +430,7 @@ Sample Output:
     0	0	0	1	1	0	0
 
 
-<a id="org4f59880"></a>
+<a id="orgd9e852c"></a>
 
 ## Q8: Hash Table - Delete a Key
 
@@ -509,12 +513,12 @@ Sample Output:
     Enter selection:
 
 
-<a id="orga428528"></a>
+<a id="orgeae5b4d"></a>
 
-# BFS & DFS
+# BFS & DFS (Week 10)
 
 
-<a id="org974c665"></a>
+<a id="org969f85a"></a>
 
 ## Q6: Undirected Graph Connection
 
@@ -538,7 +542,7 @@ Sample Output:
     The graph is not connected.
 
 
-<a id="org96a467b"></a>
+<a id="org06a0e3d"></a>
 
 ## Q7: Shortest Distance
 
@@ -568,7 +572,7 @@ Sample Output:
     The shortest distance is 2
 
 
-<a id="orgb395b4b"></a>
+<a id="org413c375"></a>
 
 ## Q8: Directed Graph Connection
 
@@ -596,4 +600,71 @@ Sample Output:
     Enter a directed edge: (press a to stop)
     Enter a directed edge: (press a to stop)
     The graph is not strongly connected.
+
+
+<a id="org68ebf28"></a>
+
+# Backtracking and DP (Week 12)
+
+
+<a id="org5c71cbf"></a>
+
+## Q6: Linear Recurrence
+
+Given a function \(F(n): F(n - 1) + 2 * F(n - 2) - 3 * F(n - 3)\) with \(F(0) = 0, F(1) = 1, F(2) = 2\),  
+Write a function using DP to calculate the value of F(n)  
+
+Sample Input:  
+
+    5
+
+Sample Output:  
+
+    Enter the value of n:
+    The value of F(5) is: 7
+
+
+<a id="orgde8d635"></a>
+
+## Q7: Knapsack
+
+Given n items, where item i has size s<sub>i</sub> and value v<sub>i</sub>, place the items into a knapsack of capacity C such that the items contain the maximum possible value.  
+
+Sample Input:  
+
+    4
+    5
+    2 1 3 2
+    12 10 20 15
+
+Sample Output:  
+
+    Enter the number of items n:
+    Enter the capacity C:
+    Enter the sizes of items (as a list, separate by spacing:
+    Enter the values of items (as a list, separate by spacing:
+    The maximum value is: 37 
+
+
+<a id="orgc959538"></a>
+
+## Q8: Coloring Regions
+
+Write a function to count the number of solutions of the ways to color V regions and m colors.  
+
+Sample Input:  
+
+    3
+    4
+    0 1 1 1
+    1 0 1 0
+    1 1 0 1
+    1 0 1 0
+
+Sample Output:  
+
+    Enter number of colors:
+    Enter number of regions:
+    Input the adjacency matrix:
+    There is/are total 6 solution(s)
 

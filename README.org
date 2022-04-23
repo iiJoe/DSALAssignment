@@ -259,7 +259,7 @@ The corrected binary search tree:
    #+end_src
 
    
-* Hash Table and Graph (Week 3)
+* Hash Table and Graph (Week 9)
   :PROPERTIES:
   :CUSTOM_ID: hash-table
   :END:
@@ -452,7 +452,7 @@ Enter selection: Enter a key for searching in the HashTable:
 Enter selection:
    #+end_src
 
-* BFS & DFS
+* BFS & DFS (Week 10)
   
 ** Q6: Undirected Graph Connection
    Using DFS, determine if an undirected graph is connected. Assume input graph has no duplicate edges or invalid links
@@ -530,4 +530,62 @@ Enter a directed edge: (press a to stop)
 Enter a directed edge: (press a to stop)
 Enter a directed edge: (press a to stop)
 The graph is not strongly connected.
+   #+end_src
+
+* Backtracking and DP (Week 12)
+  
+** Q6: Linear Recurrence
+   Given a function $F(n): F(n - 1) + 2 * F(n - 2) - 3 * F(n - 3)$ with $F(0) = 0, F(1) = 1, F(2) = 2$,
+   Write a function using DP to calculate the value of F(n)
+
+   Sample Input:
+   #+begin_src
+5
+   #+end_src
+   
+   Sample Output:
+   #+begin_src
+Enter the value of n:
+The value of F(5) is: 7
+   #+end_src
+   
+** Q7: Knapsack
+   Given n items, where item i has size s_i and value v_i, place the items into a knapsack of capacity C such that the items contain the maximum possible value.
+
+   Sample Input:
+   #+begin_src
+4
+5
+2 1 3 2
+12 10 20 15
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter the number of items n:
+Enter the capacity C:
+Enter the sizes of items (as a list, separate by spacing:
+Enter the values of items (as a list, separate by spacing:
+The maximum value is: 37 
+   #+end_src
+
+** Q8: Coloring Regions
+   Write a function to count the number of solutions of the ways to color V regions and m colors.
+
+   Sample Input:
+   #+begin_src
+3
+4
+0 1 1 1
+1 0 1 0
+1 1 0 1
+1 0 1 0
+   #+end_src
+
+   Sample Output:
+   #+begin_src
+Enter number of colors:
+Enter number of regions:
+Input the adjacency matrix:
+There is/are total 6 solution(s)
    #+end_src
